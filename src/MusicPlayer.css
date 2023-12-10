@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle, rgba(19, 75, 87, 1) 0%, rgba(15, 15, 25, 1) 71%, rgba(2, 0, 36, 1) 100%);
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* track */
+
+.trackInfo_cover {
+  max-width: 25%;
+  height: auto;
+}
+
+.trackInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  align-items: center;
+  height: 90vh;
+}
+
+.trackDetails {
+  padding: 20px;
+  color: #fff;
+  text-shadow: 0px 0px 5px #000;
+  text-align: center;
+}
+
+.trackDetails h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* controls */
+
+.controls {
+  padding: 0 50px 50px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+
+
+.controls_playBtn {
+  font-size: 40px;
+}
+
+.controls-buttons button {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.controls-buttons {
+  display: flex;
+  column-gap: 10px;
+  border: 1px solid #fff3;
+  padding: 20px 40px;
+  border-radius: 50px;
+}
+
+.controls-buttons .controls_playBtn * {
+  font-size: 50px;
+  color: #fc0;
+}
+
+/* progressbar */
+
+.progress {
+  position: fixed;
+  bottom: 198px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+  color: #fff;
+  padding: 0 37px;
+  align-items: center;
+}
+
+input[type="range"] {
+  width: 90%;
+  --range-progress: 50%;
+  /* ... */
+}
+
+input[type="range"]::before {
+  /* ... */
+  background: #f50;
+  width: var(--range-progress);
+  /* ... */
+}
